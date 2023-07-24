@@ -8,15 +8,28 @@ footer {
     .footer-img {
         width: 48px;
         height: 48px;
+
+        &:hover {
+            opacity: .5;
+        }
     }
 
     .footer-nav-menu {
         padding: 60px 48px 45px 0;
+
+        &:hover {
+            font-weight: bold;
+            color: darkred;
+        }
     }
 
-    .footer-contact li:last-child {
-        padding-bottom: 20px;
+    .footer-contact li {
+
+        &:last-child {
+            padding-bottom: 20px;
+        }
     }
+
 
     .footer-link {
         padding: 48px 0 0 0;
@@ -24,6 +37,18 @@ footer {
 
     .footer-border {
         border-bottom: 1px solid #fff;
+    }
+
+    .footer-phone-txt {
+        transition: .3s;
+    }
+
+    .footer-contact li:hover .footer-phone-txt {
+        border-bottom: 3px solid darkred;
+    }
+
+    .copy-txt:hover {
+        opacity: .5;
     }
 }
 
@@ -73,6 +98,12 @@ footer {
             .footer-contact li:last-child {
                 padding-bottom: 24px;
             }
+
+            .footer-img {
+                width: 24px;
+                height: 24px;
+                margin-left: 0;
+            }
         }
 
         .footer-link {
@@ -96,7 +127,7 @@ footer {
 
         .footer-contact {
             display: inline-block;
-            padding: 24px 14px 0 0;
+            padding: 24px 0 0 0;
 
             li {
                 margin-bottom: 8px;
@@ -110,15 +141,6 @@ footer {
                 font-size: 16px;
             }
         }
-
-        .footer-img {
-            width: 24px;
-            height: 24px;
-            margin-right: 0;
-            margin-left: 0;
-        }
-
-
 
         .copy-right {
             display: block;
